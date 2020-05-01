@@ -4,8 +4,13 @@ from .models import Product
 from django.views.generic import ListView, DetailView
 
 
+def index(request):
+    return render(request, 'products/index.html')
+
+
 class ProductListView(ListView):
     model = Product
+    template_name = "products/product_list.html"
     # if pagination required
     # paginate_by = 100
 
@@ -32,3 +37,5 @@ class ProductDetailView(DetailView):
         # Record the last accessed date
         # obj.save()
         # return obj
+
+

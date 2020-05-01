@@ -35,6 +35,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=5, decimal_places=2)
     date_added = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(upload_to=upload_image_path, blank=True, null=True)
+    featured = models.BooleanField(default=False)
 
     # objects = ProductManager()
 

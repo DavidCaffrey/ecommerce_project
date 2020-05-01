@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}
 {% block body_block %}
-<ol>
+
+
     {% for product in object_list %}
-    <li><a href="{% url 'product_detail' product.id %}">{{product.name}}</a>{{product.description}}{{product.price}}</li>
+
+    <a href="{% url 'product_detail' product.id %}">
+        <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{ product.image.url }}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">{{product.description}}</p>
+            <hr>
+            <p class="card-text">{{product.price}}</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+    </div>
+    </a>
+
     {% endfor %}
 
-</ol>
+
 
 {% endblock %}
