@@ -1,3 +1,13 @@
 from django.shortcuts import render
+from .models import Cart
 
-# Create your views here.
+from django.views.generic import DetailView
+
+
+class CartDetailView(DetailView):
+    queryset = Cart.objects.all()
+
+
+
+
+
