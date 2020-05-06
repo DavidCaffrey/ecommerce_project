@@ -9,3 +9,21 @@ body{
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
+.centered{
+    margin-left: auto;
+    margin-right: auto;
+}
+.jumbotron {
+    margin-top: 5rem;
+}
+div.card-deck{
+    margin-top: 5rem;
+}
+.login{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+form.form-inline.my-2.my-lg-0{
+
+    margin-left:15rem;
+}
