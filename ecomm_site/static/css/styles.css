@@ -18,6 +18,8 @@ body{
 }
 div.card-deck{
     margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .login{
     margin-left: 2rem;
@@ -26,4 +28,8 @@ div.card-deck{
 form.form-inline.my-2.my-lg-0{
 
     margin-left:15rem;
+}
+.list-unstyled{
+    text-decoration: none;
+    border: solid 1px black;
 }
